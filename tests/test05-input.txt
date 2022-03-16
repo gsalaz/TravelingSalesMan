@@ -1,0 +1,128 @@
+append:IAD:Washington Dulles International:Dulles:USA:13:7
+append:LAX:Los Angeles International:Los Angeles:USA:2:2
+append:JFK:John F Kennedy International:New York:USA:11:11
+append:BWI:Baltimore Washington International:Baltimore:USA:16:5
+append:ORD:Chicago Ohare International:Chicago:USA:8:7
+append:SFO:San Francisco International:San Francisco:USA:1:7
+append:YYZ:Lester B Pearson International:Toronto:Canada:8:12
+append:ATL:The William B Hartsfield Atlanta International:Atlanta:USA:12:3
+append:ANC:Anchorage International:Anchorage:USA:5:11
+append:MEX:Licenciado Benito Juarez International:Mexico City:Mexico:5:3
+list-tour
+cost
+reverse:IAD:BWI
+list-tour
+cost
+reverse:MEX:LAX
+list-tour
+cost
+reverse:ATL:YYZ
+list-tour
+cost
+reverse:IAD:ORD
+list-tour
+cost
+reverse:SFO:BWI
+list-tour
+cost
+reverse:SFO:SFO
+reverse:SFX:BWI
+reverse:SFO:BWX
+list-tour
+cost
+clear
+append:IAD:Washington Dulles International:Dulles:USA:13:7
+append:LAX:Los Angeles International:Los Angeles:USA:2:2
+append:JFK:John F Kennedy International:New York:USA:11:11
+append:BWI:Baltimore Washington International:Baltimore:USA:16:5
+append:ORD:Chicago Ohare International:Chicago:USA:8:7
+append:SFO:San Francisco International:San Francisco:USA:1:7
+append:YYZ:Lester B Pearson International:Toronto:Canada:8:12
+append:ATL:The William B Hartsfield Atlanta International:Atlanta:USA:12:3
+append:ANC:Anchorage International:Anchorage:USA:5:11
+append:MEX:Licenciado Benito Juarez International:Mexico City:Mexico:5:3
+list-tour
+cost
+two-opt:IAD:BWI
+list-tour
+cost
+two-opt:MEX:LAX
+list-tour
+cost
+two-opt:ATL:YYZ
+list-tour
+cost
+two-opt:IAD:ORD
+list-tour
+cost
+two-opt:SFO:BWI
+list-tour
+cost
+two-opt:SFO:SFO
+two-opt:SFX:BWI
+two-opt:SFO:BWX
+list-tour
+cost
+clear
+append:IAD:Washington Dulles International:Dulles:USA:13:7
+append:LAX:Los Angeles International:Los Angeles:USA:2:2
+append:JFK:John F Kennedy International:New York:USA:11:11
+append:BWI:Baltimore Washington International:Baltimore:USA:16:5
+append:ORD:Chicago Ohare International:Chicago:USA:8:7
+append:SFO:San Francisco International:San Francisco:USA:1:7
+append:YYZ:Lester B Pearson International:Toronto:Canada:8:12
+append:ATL:The William B Hartsfield Atlanta International:Atlanta:USA:12:3
+append:ANC:Anchorage International:Anchorage:USA:5:11
+append:MEX:Licenciado Benito Juarez International:Mexico City:Mexico:5:3
+list-tour
+cost
+all-two-opt
+list-tour
+cost
+all-two-opt
+list-tour
+cost
+clear
+append:IAD:Washington Dulles International:Dulles:USA:13:7
+append:JFK:John F Kennedy International:New York:USA:11:11
+append:BWI:Baltimore Washington International:Baltimore:USA:16:5
+append:ORD:Chicago Ohare International:Chicago:USA:8:7
+append:LAX:Los Angeles International:Los Angeles:USA:2:2
+append:YYZ:Lester B Pearson International:Toronto:Canada:8:12
+append:ATL:The William B Hartsfield Atlanta International:Atlanta:USA:12:3
+append:ANC:Anchorage International:Anchorage:USA:5:11
+append:MEX:Licenciado Benito Juarez International:Mexico City:Mexico:5:3
+append:SFO:San Francisco International:San Francisco:USA:1:7
+list-tour
+cost
+two-opt-nn:IAD
+list-tour
+cost
+two-opt-nn:ATL
+list-tour
+cost
+two-opt-nn:IAD
+list-tour
+cost
+two-opt-nn:SFO
+list-tour
+cost
+two-opt-nn:SFX
+list-tour
+cost
+clear
+append:IAD:Washington Dulles International:Dulles:USA:13:7
+append:JFK:John F Kennedy International:New York:USA:11:11
+append:BWI:Baltimore Washington International:Baltimore:USA:16:5
+append:ORD:Chicago Ohare International:Chicago:USA:8:7
+append:LAX:Los Angeles International:Los Angeles:USA:2:2
+append:YYZ:Lester B Pearson International:Toronto:Canada:8:12
+append:ATL:The William B Hartsfield Atlanta International:Atlanta:USA:12:3
+append:ANC:Anchorage International:Anchorage:USA:5:11
+append:MEX:Licenciado Benito Juarez International:Mexico City:Mexico:5:3
+append:SFO:San Francisco International:San Francisco:USA:1:7
+list-tour
+cost
+two-opt-nn:ORD
+list-tour
+cost

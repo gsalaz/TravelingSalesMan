@@ -1,0 +1,403 @@
+append(IAD): successful {Washington Dulles International, Dulles, USA, (13.0,7.0)}
+append(LAX): successful {Los Angeles International, Los Angeles, USA, (2.0,2.0)}
+append(JFK): successful {John F Kennedy International, New York, USA, (11.0,11.0)}
+append(BWI): successful {Baltimore Washington International, Baltimore, USA, (16.0,5.0)}
+append(ORD): successful {Chicago Ohare International, Chicago, USA, (8.0,7.0)}
+append(SFO): successful {San Francisco International, San Francisco, USA, (1.0,7.0)}
+append(YYZ): successful {Lester B Pearson International, Toronto, Canada, (8.0,12.0)}
+append(ATL): successful {The William B Hartsfield Atlanta International, Atlanta, USA, (12.0,3.0)}
+append(ANC): successful {Anchorage International, Anchorage, USA, (5.0,11.0)}
+append(MEX): successful {Licenciado Benito Juarez International, Mexico City, Mexico, (5.0,3.0)}
+list-tour:
+  [0] IAD: (13.0,7.0)
+  [1] LAX: (2.0,2.0)
+  [2] JFK: (11.0,11.0)
+  [3] BWI: (16.0,5.0)
+  [4] ORD: (8.0,7.0)
+  [5] SFO: (1.0,7.0)
+  [6] YYZ: (8.0,12.0)
+  [7] ATL: (12.0,3.0)
+  [8] ANC: (5.0,11.0)
+  [9] MEX: (5.0,3.0)
+tour-short-summary: 0:IAD 1:LAX 2:JFK 3:BWI 4:ORD 5:SFO 6:YYZ 7:ATL 8:ANC 9:MEX
+cost: 914.0
+reverse(IAD,BWI): successful
+list-tour:
+  [0] IAD: (13.0,7.0)
+  [1] BWI: (16.0,5.0)
+  [2] JFK: (11.0,11.0)
+  [3] LAX: (2.0,2.0)
+  [4] ORD: (8.0,7.0)
+  [5] SFO: (1.0,7.0)
+  [6] YYZ: (8.0,12.0)
+  [7] ATL: (12.0,3.0)
+  [8] ANC: (5.0,11.0)
+  [9] MEX: (5.0,3.0)
+tour-short-summary: 0:IAD 1:BWI 2:JFK 3:LAX 4:ORD 5:SFO 6:YYZ 7:ATL 8:ANC 9:MEX
+cost: 774.0 (change from prior cost = -140.0)
+reverse(MEX,LAX): successful
+list-tour:
+  [0] IAD: (13.0,7.0)
+  [1] BWI: (16.0,5.0)
+  [2] JFK: (11.0,11.0)
+  [3] LAX: (2.0,2.0)
+  [4] MEX: (5.0,3.0)
+  [5] ANC: (5.0,11.0)
+  [6] ATL: (12.0,3.0)
+  [7] YYZ: (8.0,12.0)
+  [8] SFO: (1.0,7.0)
+  [9] ORD: (8.0,7.0)
+tour-short-summary: 0:IAD 1:BWI 2:JFK 3:LAX 4:MEX 5:ANC 6:ATL 7:YYZ 8:SFO 9:ORD
+cost: 668.0 (change from prior cost = -106.0)
+reverse(ATL,YYZ): successful
+list-tour:
+  [0] IAD: (13.0,7.0)
+  [1] BWI: (16.0,5.0)
+  [2] JFK: (11.0,11.0)
+  [3] LAX: (2.0,2.0)
+  [4] MEX: (5.0,3.0)
+  [5] ANC: (5.0,11.0)
+  [6] ATL: (12.0,3.0)
+  [7] YYZ: (8.0,12.0)
+  [8] SFO: (1.0,7.0)
+  [9] ORD: (8.0,7.0)
+tour-short-summary: 0:IAD 1:BWI 2:JFK 3:LAX 4:MEX 5:ANC 6:ATL 7:YYZ 8:SFO 9:ORD
+cost: 668.0 (change from prior cost = 0.0)
+reverse(IAD,ORD): successful
+list-tour:
+  [0] IAD: (13.0,7.0)
+  [1] ORD: (8.0,7.0)
+  [2] SFO: (1.0,7.0)
+  [3] YYZ: (8.0,12.0)
+  [4] ATL: (12.0,3.0)
+  [5] ANC: (5.0,11.0)
+  [6] MEX: (5.0,3.0)
+  [7] LAX: (2.0,2.0)
+  [8] JFK: (11.0,11.0)
+  [9] BWI: (16.0,5.0)
+tour-short-summary: 0:IAD 1:ORD 2:SFO 3:YYZ 4:ATL 5:ANC 6:MEX 7:LAX 8:JFK 9:BWI
+cost: 668.0 (change from prior cost = 0.0)
+reverse(SFO,BWI): successful
+list-tour:
+  [0] IAD: (13.0,7.0)
+  [1] ORD: (8.0,7.0)
+  [2] SFO: (1.0,7.0)
+  [3] BWI: (16.0,5.0)
+  [4] JFK: (11.0,11.0)
+  [5] LAX: (2.0,2.0)
+  [6] MEX: (5.0,3.0)
+  [7] ANC: (5.0,11.0)
+  [8] ATL: (12.0,3.0)
+  [9] YYZ: (8.0,12.0)
+tour-short-summary: 0:IAD 1:ORD 2:SFO 3:BWI 4:JFK 5:LAX 6:MEX 7:ANC 8:ATL 9:YYZ
+cost: 860.0 (change from prior cost = 192.0)
+reverse(SFO,SFO): failure due to exception: "Duplicate label"
+reverse(SFX,BWI): failure due to exception: "Label not found"
+reverse(SFO,BWX): failure due to exception: "Label not found"
+list-tour:
+  [0] IAD: (13.0,7.0)
+  [1] ORD: (8.0,7.0)
+  [2] SFO: (1.0,7.0)
+  [3] BWI: (16.0,5.0)
+  [4] JFK: (11.0,11.0)
+  [5] LAX: (2.0,2.0)
+  [6] MEX: (5.0,3.0)
+  [7] ANC: (5.0,11.0)
+  [8] ATL: (12.0,3.0)
+  [9] YYZ: (8.0,12.0)
+tour-short-summary: 0:IAD 1:ORD 2:SFO 3:BWI 4:JFK 5:LAX 6:MEX 7:ANC 8:ATL 9:YYZ
+cost: 860.0 (change from prior cost = 0.0)
+clear: successful
+append(IAD): successful {Washington Dulles International, Dulles, USA, (13.0,7.0)}
+append(LAX): successful {Los Angeles International, Los Angeles, USA, (2.0,2.0)}
+append(JFK): successful {John F Kennedy International, New York, USA, (11.0,11.0)}
+append(BWI): successful {Baltimore Washington International, Baltimore, USA, (16.0,5.0)}
+append(ORD): successful {Chicago Ohare International, Chicago, USA, (8.0,7.0)}
+append(SFO): successful {San Francisco International, San Francisco, USA, (1.0,7.0)}
+append(YYZ): successful {Lester B Pearson International, Toronto, Canada, (8.0,12.0)}
+append(ATL): successful {The William B Hartsfield Atlanta International, Atlanta, USA, (12.0,3.0)}
+append(ANC): successful {Anchorage International, Anchorage, USA, (5.0,11.0)}
+append(MEX): successful {Licenciado Benito Juarez International, Mexico City, Mexico, (5.0,3.0)}
+list-tour:
+  [0] IAD: (13.0,7.0)
+  [1] LAX: (2.0,2.0)
+  [2] JFK: (11.0,11.0)
+  [3] BWI: (16.0,5.0)
+  [4] ORD: (8.0,7.0)
+  [5] SFO: (1.0,7.0)
+  [6] YYZ: (8.0,12.0)
+  [7] ATL: (12.0,3.0)
+  [8] ANC: (5.0,11.0)
+  [9] MEX: (5.0,3.0)
+tour-short-summary: 0:IAD 1:LAX 2:JFK 3:BWI 4:ORD 5:SFO 6:YYZ 7:ATL 8:ANC 9:MEX
+cost: 914.0
+two-opt(IAD,BWI): effective
+list-tour:
+  [0] IAD: (13.0,7.0)
+  [1] BWI: (16.0,5.0)
+  [2] JFK: (11.0,11.0)
+  [3] LAX: (2.0,2.0)
+  [4] ORD: (8.0,7.0)
+  [5] SFO: (1.0,7.0)
+  [6] YYZ: (8.0,12.0)
+  [7] ATL: (12.0,3.0)
+  [8] ANC: (5.0,11.0)
+  [9] MEX: (5.0,3.0)
+tour-short-summary: 0:IAD 1:BWI 2:JFK 3:LAX 4:ORD 5:SFO 6:YYZ 7:ATL 8:ANC 9:MEX
+cost: 774.0 (change from prior cost = -140.0)
+two-opt(MEX,LAX): effective
+list-tour:
+  [0] IAD: (13.0,7.0)
+  [1] BWI: (16.0,5.0)
+  [2] JFK: (11.0,11.0)
+  [3] LAX: (2.0,2.0)
+  [4] MEX: (5.0,3.0)
+  [5] ANC: (5.0,11.0)
+  [6] ATL: (12.0,3.0)
+  [7] YYZ: (8.0,12.0)
+  [8] SFO: (1.0,7.0)
+  [9] ORD: (8.0,7.0)
+tour-short-summary: 0:IAD 1:BWI 2:JFK 3:LAX 4:MEX 5:ANC 6:ATL 7:YYZ 8:SFO 9:ORD
+cost: 668.0 (change from prior cost = -106.0)
+two-opt(ATL,YYZ): ineffective
+list-tour:
+  [0] IAD: (13.0,7.0)
+  [1] BWI: (16.0,5.0)
+  [2] JFK: (11.0,11.0)
+  [3] LAX: (2.0,2.0)
+  [4] MEX: (5.0,3.0)
+  [5] ANC: (5.0,11.0)
+  [6] ATL: (12.0,3.0)
+  [7] YYZ: (8.0,12.0)
+  [8] SFO: (1.0,7.0)
+  [9] ORD: (8.0,7.0)
+tour-short-summary: 0:IAD 1:BWI 2:JFK 3:LAX 4:MEX 5:ANC 6:ATL 7:YYZ 8:SFO 9:ORD
+cost: 668.0 (change from prior cost = 0.0)
+two-opt(IAD,ORD): ineffective
+list-tour:
+  [0] IAD: (13.0,7.0)
+  [1] BWI: (16.0,5.0)
+  [2] JFK: (11.0,11.0)
+  [3] LAX: (2.0,2.0)
+  [4] MEX: (5.0,3.0)
+  [5] ANC: (5.0,11.0)
+  [6] ATL: (12.0,3.0)
+  [7] YYZ: (8.0,12.0)
+  [8] SFO: (1.0,7.0)
+  [9] ORD: (8.0,7.0)
+tour-short-summary: 0:IAD 1:BWI 2:JFK 3:LAX 4:MEX 5:ANC 6:ATL 7:YYZ 8:SFO 9:ORD
+cost: 668.0 (change from prior cost = 0.0)
+two-opt(SFO,BWI): ineffective
+list-tour:
+  [0] IAD: (13.0,7.0)
+  [1] BWI: (16.0,5.0)
+  [2] JFK: (11.0,11.0)
+  [3] LAX: (2.0,2.0)
+  [4] MEX: (5.0,3.0)
+  [5] ANC: (5.0,11.0)
+  [6] ATL: (12.0,3.0)
+  [7] YYZ: (8.0,12.0)
+  [8] SFO: (1.0,7.0)
+  [9] ORD: (8.0,7.0)
+tour-short-summary: 0:IAD 1:BWI 2:JFK 3:LAX 4:MEX 5:ANC 6:ATL 7:YYZ 8:SFO 9:ORD
+cost: 668.0 (change from prior cost = 0.0)
+two-opt(SFO,SFO): failure due to exception: "Duplicate label"
+two-opt(SFX,BWI): failure due to exception: "Label not found"
+two-opt(SFO,BWX): failure due to exception: "Label not found"
+list-tour:
+  [0] IAD: (13.0,7.0)
+  [1] BWI: (16.0,5.0)
+  [2] JFK: (11.0,11.0)
+  [3] LAX: (2.0,2.0)
+  [4] MEX: (5.0,3.0)
+  [5] ANC: (5.0,11.0)
+  [6] ATL: (12.0,3.0)
+  [7] YYZ: (8.0,12.0)
+  [8] SFO: (1.0,7.0)
+  [9] ORD: (8.0,7.0)
+tour-short-summary: 0:IAD 1:BWI 2:JFK 3:LAX 4:MEX 5:ANC 6:ATL 7:YYZ 8:SFO 9:ORD
+cost: 668.0 (change from prior cost = 0.0)
+clear: successful
+append(IAD): successful {Washington Dulles International, Dulles, USA, (13.0,7.0)}
+append(LAX): successful {Los Angeles International, Los Angeles, USA, (2.0,2.0)}
+append(JFK): successful {John F Kennedy International, New York, USA, (11.0,11.0)}
+append(BWI): successful {Baltimore Washington International, Baltimore, USA, (16.0,5.0)}
+append(ORD): successful {Chicago Ohare International, Chicago, USA, (8.0,7.0)}
+append(SFO): successful {San Francisco International, San Francisco, USA, (1.0,7.0)}
+append(YYZ): successful {Lester B Pearson International, Toronto, Canada, (8.0,12.0)}
+append(ATL): successful {The William B Hartsfield Atlanta International, Atlanta, USA, (12.0,3.0)}
+append(ANC): successful {Anchorage International, Anchorage, USA, (5.0,11.0)}
+append(MEX): successful {Licenciado Benito Juarez International, Mexico City, Mexico, (5.0,3.0)}
+list-tour:
+  [0] IAD: (13.0,7.0)
+  [1] LAX: (2.0,2.0)
+  [2] JFK: (11.0,11.0)
+  [3] BWI: (16.0,5.0)
+  [4] ORD: (8.0,7.0)
+  [5] SFO: (1.0,7.0)
+  [6] YYZ: (8.0,12.0)
+  [7] ATL: (12.0,3.0)
+  [8] ANC: (5.0,11.0)
+  [9] MEX: (5.0,3.0)
+tour-short-summary: 0:IAD 1:LAX 2:JFK 3:BWI 4:ORD 5:SFO 6:YYZ 7:ATL 8:ANC 9:MEX
+cost: 914.0
+all-two-opt: successful (9 effective)
+list-tour:
+  [0] IAD: (13.0,7.0)
+  [1] ATL: (12.0,3.0)
+  [2] MEX: (5.0,3.0)
+  [3] LAX: (2.0,2.0)
+  [4] SFO: (1.0,7.0)
+  [5] ANC: (5.0,11.0)
+  [6] YYZ: (8.0,12.0)
+  [7] JFK: (11.0,11.0)
+  [8] ORD: (8.0,7.0)
+  [9] BWI: (16.0,5.0)
+tour-short-summary: 0:IAD 1:ATL 2:MEX 3:LAX 4:SFO 5:ANC 6:YYZ 7:JFK 8:ORD 9:BWI
+cost: 260.0 (change from prior cost = -654.0)
+all-two-opt: successful (1 effective)
+list-tour:
+  [0] IAD: (13.0,7.0)
+  [1] ORD: (8.0,7.0)
+  [2] JFK: (11.0,11.0)
+  [3] YYZ: (8.0,12.0)
+  [4] ANC: (5.0,11.0)
+  [5] SFO: (1.0,7.0)
+  [6] LAX: (2.0,2.0)
+  [7] MEX: (5.0,3.0)
+  [8] ATL: (12.0,3.0)
+  [9] BWI: (16.0,5.0)
+tour-short-summary: 0:IAD 1:ORD 2:JFK 3:YYZ 4:ANC 5:SFO 6:LAX 7:MEX 8:ATL 9:BWI
+cost: 220.0 (change from prior cost = -40.0)
+clear: successful
+append(IAD): successful {Washington Dulles International, Dulles, USA, (13.0,7.0)}
+append(JFK): successful {John F Kennedy International, New York, USA, (11.0,11.0)}
+append(BWI): successful {Baltimore Washington International, Baltimore, USA, (16.0,5.0)}
+append(ORD): successful {Chicago Ohare International, Chicago, USA, (8.0,7.0)}
+append(LAX): successful {Los Angeles International, Los Angeles, USA, (2.0,2.0)}
+append(YYZ): successful {Lester B Pearson International, Toronto, Canada, (8.0,12.0)}
+append(ATL): successful {The William B Hartsfield Atlanta International, Atlanta, USA, (12.0,3.0)}
+append(ANC): successful {Anchorage International, Anchorage, USA, (5.0,11.0)}
+append(MEX): successful {Licenciado Benito Juarez International, Mexico City, Mexico, (5.0,3.0)}
+append(SFO): successful {San Francisco International, San Francisco, USA, (1.0,7.0)}
+list-tour:
+  [0] IAD: (13.0,7.0)
+  [1] JFK: (11.0,11.0)
+  [2] BWI: (16.0,5.0)
+  [3] ORD: (8.0,7.0)
+  [4] LAX: (2.0,2.0)
+  [5] YYZ: (8.0,12.0)
+  [6] ATL: (12.0,3.0)
+  [7] ANC: (5.0,11.0)
+  [8] MEX: (5.0,3.0)
+  [9] SFO: (1.0,7.0)
+tour-short-summary: 0:IAD 1:JFK 2:BWI 3:ORD 4:LAX 5:YYZ 6:ATL 7:ANC 8:MEX 9:SFO
+cost: 796.0
+two-opt-nn(IAD): effective (with BWI)
+list-tour:
+  [0] IAD: (13.0,7.0)
+  [1] BWI: (16.0,5.0)
+  [2] JFK: (11.0,11.0)
+  [3] ORD: (8.0,7.0)
+  [4] LAX: (2.0,2.0)
+  [5] YYZ: (8.0,12.0)
+  [6] ATL: (12.0,3.0)
+  [7] ANC: (5.0,11.0)
+  [8] MEX: (5.0,3.0)
+  [9] SFO: (1.0,7.0)
+tour-short-summary: 0:IAD 1:BWI 2:JFK 3:ORD 4:LAX 5:YYZ 6:ATL 7:ANC 8:MEX 9:SFO
+cost: 746.0 (change from prior cost = -50.0)
+two-opt-nn(ATL): ineffective
+list-tour:
+  [0] IAD: (13.0,7.0)
+  [1] BWI: (16.0,5.0)
+  [2] JFK: (11.0,11.0)
+  [3] ORD: (8.0,7.0)
+  [4] LAX: (2.0,2.0)
+  [5] YYZ: (8.0,12.0)
+  [6] ATL: (12.0,3.0)
+  [7] ANC: (5.0,11.0)
+  [8] MEX: (5.0,3.0)
+  [9] SFO: (1.0,7.0)
+tour-short-summary: 0:IAD 1:BWI 2:JFK 3:ORD 4:LAX 5:YYZ 6:ATL 7:ANC 8:MEX 9:SFO
+cost: 746.0 (change from prior cost = 0.0)
+two-opt-nn(IAD): ineffective
+list-tour:
+  [0] IAD: (13.0,7.0)
+  [1] BWI: (16.0,5.0)
+  [2] JFK: (11.0,11.0)
+  [3] ORD: (8.0,7.0)
+  [4] LAX: (2.0,2.0)
+  [5] YYZ: (8.0,12.0)
+  [6] ATL: (12.0,3.0)
+  [7] ANC: (5.0,11.0)
+  [8] MEX: (5.0,3.0)
+  [9] SFO: (1.0,7.0)
+tour-short-summary: 0:IAD 1:BWI 2:JFK 3:ORD 4:LAX 5:YYZ 6:ATL 7:ANC 8:MEX 9:SFO
+cost: 746.0 (change from prior cost = 0.0)
+two-opt-nn(SFO): effective (with LAX)
+list-tour:
+  [0] IAD: (13.0,7.0)
+  [1] BWI: (16.0,5.0)
+  [2] JFK: (11.0,11.0)
+  [3] ORD: (8.0,7.0)
+  [4] LAX: (2.0,2.0)
+  [5] SFO: (1.0,7.0)
+  [6] MEX: (5.0,3.0)
+  [7] ANC: (5.0,11.0)
+  [8] ATL: (12.0,3.0)
+  [9] YYZ: (8.0,12.0)
+tour-short-summary: 0:IAD 1:BWI 2:JFK 3:ORD 4:LAX 5:SFO 6:MEX 7:ANC 8:ATL 9:YYZ
+cost: 542.0 (change from prior cost = -204.0)
+two-opt-nn(SFX): failure due to exception: "Label not found"
+list-tour:
+  [0] IAD: (13.0,7.0)
+  [1] BWI: (16.0,5.0)
+  [2] JFK: (11.0,11.0)
+  [3] ORD: (8.0,7.0)
+  [4] LAX: (2.0,2.0)
+  [5] SFO: (1.0,7.0)
+  [6] MEX: (5.0,3.0)
+  [7] ANC: (5.0,11.0)
+  [8] ATL: (12.0,3.0)
+  [9] YYZ: (8.0,12.0)
+tour-short-summary: 0:IAD 1:BWI 2:JFK 3:ORD 4:LAX 5:SFO 6:MEX 7:ANC 8:ATL 9:YYZ
+cost: 542.0 (change from prior cost = 0.0)
+clear: successful
+append(IAD): successful {Washington Dulles International, Dulles, USA, (13.0,7.0)}
+append(JFK): successful {John F Kennedy International, New York, USA, (11.0,11.0)}
+append(BWI): successful {Baltimore Washington International, Baltimore, USA, (16.0,5.0)}
+append(ORD): successful {Chicago Ohare International, Chicago, USA, (8.0,7.0)}
+append(LAX): successful {Los Angeles International, Los Angeles, USA, (2.0,2.0)}
+append(YYZ): successful {Lester B Pearson International, Toronto, Canada, (8.0,12.0)}
+append(ATL): successful {The William B Hartsfield Atlanta International, Atlanta, USA, (12.0,3.0)}
+append(ANC): successful {Anchorage International, Anchorage, USA, (5.0,11.0)}
+append(MEX): successful {Licenciado Benito Juarez International, Mexico City, Mexico, (5.0,3.0)}
+append(SFO): successful {San Francisco International, San Francisco, USA, (1.0,7.0)}
+list-tour:
+  [0] IAD: (13.0,7.0)
+  [1] JFK: (11.0,11.0)
+  [2] BWI: (16.0,5.0)
+  [3] ORD: (8.0,7.0)
+  [4] LAX: (2.0,2.0)
+  [5] YYZ: (8.0,12.0)
+  [6] ATL: (12.0,3.0)
+  [7] ANC: (5.0,11.0)
+  [8] MEX: (5.0,3.0)
+  [9] SFO: (1.0,7.0)
+tour-short-summary: 0:IAD 1:JFK 2:BWI 3:ORD 4:LAX 5:YYZ 6:ATL 7:ANC 8:MEX 9:SFO
+cost: 796.0
+two-opt-nn(ORD): effective (with MEX)
+list-tour:
+  [0] IAD: (13.0,7.0)
+  [1] JFK: (11.0,11.0)
+  [2] BWI: (16.0,5.0)
+  [3] ORD: (8.0,7.0)
+  [4] MEX: (5.0,3.0)
+  [5] ANC: (5.0,11.0)
+  [6] ATL: (12.0,3.0)
+  [7] YYZ: (8.0,12.0)
+  [8] LAX: (2.0,2.0)
+  [9] SFO: (1.0,7.0)
+tour-short-summary: 0:IAD 1:JFK 2:BWI 3:ORD 4:MEX 5:ANC 6:ATL 7:YYZ 8:LAX 9:SFO
+cost: 754.0 (change from prior cost = -42.0)

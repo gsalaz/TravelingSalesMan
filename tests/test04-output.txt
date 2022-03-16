@@ -1,0 +1,79 @@
+append(IAD): successful {Washington Dulles International, Dulles, USA, (13.0,7.0)}
+append(JFK): successful {John F Kennedy International, New York, USA, (11.0,11.0)}
+append(BWI): successful {Baltimore Washington International, Baltimore, USA, (16.0,5.0)}
+append(ORD): successful {Chicago Ohare International, Chicago, USA, (8.0,7.0)}
+append(LAX): successful {Los Angeles International, Los Angeles, USA, (2.0,2.0)}
+append(YYZ): successful {Lester B Pearson International, Toronto, Canada, (8.0,12.0)}
+append(ATL): successful {The William B Hartsfield Atlanta International, Atlanta, USA, (12.0,3.0)}
+append(ANC): successful {Anchorage International, Anchorage, USA, (5.0,11.0)}
+append(MEX): successful {Licenciado Benito Juarez International, Mexico City, Mexico, (5.0,3.0)}
+append(SFO): successful {San Francisco International, San Francisco, USA, (1.0,7.0)}
+list-tour:
+  [0] IAD: (13.0,7.0)
+  [1] JFK: (11.0,11.0)
+  [2] BWI: (16.0,5.0)
+  [3] ORD: (8.0,7.0)
+  [4] LAX: (2.0,2.0)
+  [5] YYZ: (8.0,12.0)
+  [6] ATL: (12.0,3.0)
+  [7] ANC: (5.0,11.0)
+  [8] MEX: (5.0,3.0)
+  [9] SFO: (1.0,7.0)
+tour-short-summary: 0:IAD 1:JFK 2:BWI 3:ORD 4:LAX 5:YYZ 6:ATL 7:ANC 8:MEX 9:SFO
+cost: 796.0
+two-opt-nn(IAD): effective (with BWI)
+list-tour:
+  [0] IAD: (13.0,7.0)
+  [1] BWI: (16.0,5.0)
+  [2] JFK: (11.0,11.0)
+  [3] ORD: (8.0,7.0)
+  [4] LAX: (2.0,2.0)
+  [5] YYZ: (8.0,12.0)
+  [6] ATL: (12.0,3.0)
+  [7] ANC: (5.0,11.0)
+  [8] MEX: (5.0,3.0)
+  [9] SFO: (1.0,7.0)
+tour-short-summary: 0:IAD 1:BWI 2:JFK 3:ORD 4:LAX 5:YYZ 6:ATL 7:ANC 8:MEX 9:SFO
+cost: 746.0 (change from prior cost = -50.0)
+two-opt-nn(ATL): ineffective
+list-tour:
+  [0] IAD: (13.0,7.0)
+  [1] BWI: (16.0,5.0)
+  [2] JFK: (11.0,11.0)
+  [3] ORD: (8.0,7.0)
+  [4] LAX: (2.0,2.0)
+  [5] YYZ: (8.0,12.0)
+  [6] ATL: (12.0,3.0)
+  [7] ANC: (5.0,11.0)
+  [8] MEX: (5.0,3.0)
+  [9] SFO: (1.0,7.0)
+tour-short-summary: 0:IAD 1:BWI 2:JFK 3:ORD 4:LAX 5:YYZ 6:ATL 7:ANC 8:MEX 9:SFO
+cost: 746.0 (change from prior cost = 0.0)
+two-opt-nn(IAD): ineffective
+list-tour:
+  [0] IAD: (13.0,7.0)
+  [1] BWI: (16.0,5.0)
+  [2] JFK: (11.0,11.0)
+  [3] ORD: (8.0,7.0)
+  [4] LAX: (2.0,2.0)
+  [5] YYZ: (8.0,12.0)
+  [6] ATL: (12.0,3.0)
+  [7] ANC: (5.0,11.0)
+  [8] MEX: (5.0,3.0)
+  [9] SFO: (1.0,7.0)
+tour-short-summary: 0:IAD 1:BWI 2:JFK 3:ORD 4:LAX 5:YYZ 6:ATL 7:ANC 8:MEX 9:SFO
+cost: 746.0 (change from prior cost = 0.0)
+two-opt-nn(SFO): effective (with LAX)
+list-tour:
+  [0] IAD: (13.0,7.0)
+  [1] BWI: (16.0,5.0)
+  [2] JFK: (11.0,11.0)
+  [3] ORD: (8.0,7.0)
+  [4] LAX: (2.0,2.0)
+  [5] SFO: (1.0,7.0)
+  [6] MEX: (5.0,3.0)
+  [7] ANC: (5.0,11.0)
+  [8] ATL: (12.0,3.0)
+  [9] YYZ: (8.0,12.0)
+tour-short-summary: 0:IAD 1:BWI 2:JFK 3:ORD 4:LAX 5:SFO 6:MEX 7:ANC 8:ATL 9:YYZ
+cost: 542.0 (change from prior cost = -204.0)
